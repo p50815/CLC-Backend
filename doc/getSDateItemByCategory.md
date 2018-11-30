@@ -10,7 +10,7 @@
 }
 ```
 欄位名稱 | 型態 | 說明
-- | - | -
+-- | - | -
 categoryId | string | 帶入欲查詢的課程類別代碼
 
 ## 回傳JSON
@@ -31,7 +31,7 @@ categoryId | string | 帶入欲查詢的課程類別代碼
 ```
 
 欄位名稱 | 型態 | 說明
-- | - | -
+-- | - | -
 status | int | 處理結果狀態碼，0 為請求成功
 categories | array | 存放所有課堂資訊的陣列
 value | string | 課堂代碼
