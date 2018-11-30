@@ -1,5 +1,5 @@
 # [GET] getSubjectListByCategory 取得開課清單
-
+
 ## API URL
 > http://{domain}:{port}/apis/SubjectData/SubjectList/getSubjectListByCategory
 
@@ -40,11 +40,11 @@ category | string | 帶入欲查詢的課程類別代碼，由 getCategories 取
 
 欄位名稱 | 型態 | 說明
 -- | - | -
-status | int | 處理結果狀態碼，0 為請求成功
+status | int | 處理結果狀態碼，0 為請求成功
 courses | array | 存放所有課程資訊的陣列
-status | string | 課程狀態 ['課程已開始報名', '課程已結束', '課程尚未開始']
+status | string | 課程狀態 ['課程已開始報名', '課程已結束', '課程尚未開始']
 id | string | 課程識別代碼
 content | string | 課程名稱
 date | string | 上課日期
-time | string | 上課時間
+time | string | 上課時間
 regTime | string | 報名日期
