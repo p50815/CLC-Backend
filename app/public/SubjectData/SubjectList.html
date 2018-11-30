@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        生命建造開課管理
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascripts/jquery-3.1.1.min.js"></script>
+    <script src="../javascripts/menu.js"></script>
+    <script src="../javascripts/SubjectList.js"></script>
+
+    <style>
+        #gvSubject {
+            color:#333333;
+            width:60%;
+            border-collapse:collapse;
+        }
+        #gvSubject tr:nth-child(odd) {
+            color:#284775;
+            background-color:White;
+        }
+        #gvSubject tr:nth-child(even) {
+            color:#333333;
+            background-color:#F7F6F3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <div align="center">
+            <img alt="" src="../images/CLC_Logo.gif" />
+            <h1>生命建造-課程管理</h1>
+            <div>
+                <select id="courseSelect">
+                </select>
+                <input type="button" value="新增" id="gvSubject_btnAdd" />
+            </div>
+            <p>
+            <div>
+                <table cellspacing="0" cellpadding="4" id="gvSubject">
+                    <tr style="color:White;background-color:#5D7B9D;font-weight:bold;">
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">課程</th>
+                        <th scope="col">日期</th>
+                        <th scope="col">時間</th>
+                        <th scope="col">報名時間</th>
+                        <th scope="col">&nbsp;</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

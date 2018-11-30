@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title class="title"></title>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="../stylesheets/PageStyle.css" rel="stylesheet" />
+    <script src="../javascripts/jquery-3.1.1.min.js"></script>
+    <script src="../javascripts/examedit.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../javascripts/SubjectEdit.js"></script>
+
+</head>
+
+
+<body>
+    <form>
+        <div>
+            <center>
+                <img alt="" src="../images/CLC_Logo.gif" />
+                <h1 class="title"></h1>
+            </center>
+
+            <!--Content-->
+            <div>
+                <table id="tableMem" style="width: 500px;" align="center" border="1">
+                    <!--開課次數-->
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span style="color:Black;font-weight:bold;">開課次數</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: left;">
+                            &nbsp;&nbsp;<input type="text" value="" id="year" disabled="disabled" class="inputStyle" style="width:50px;" />年&nbsp;/
+                            &nbsp;第<input type="text" value="" id="count" disabled="disabled" class="inputStyle" style="width:50px;" />次開課
+                        </td>
+                    </tr>
+                    <!--報名條件-->
+                    <tr id="regConditionRow" style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span style="color:Black;font-weight:bold;">報名條件</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">
+                            <textarea rows="5" cols="20" id="regCondition" style="width:95%;"></textarea>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <!--上課日期-->
+                    <!-- <tr id="@@--@@" style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span class="SDateTitle" style="color:Black;font-weight:bold;"></span>
+                            <input class="isOpen" type="checkbox" name="ckbIsSub12" /> 有開課
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">【<span class="SDateTitle"></span>>】上課時間：
+                            <input type="text" value="" class="date inputStyle" />
+                            <br />
+                            <select class="amOrPm inputStyle">
+                                <option value="上午" selected="selected">上午</option>
+                                <option value="下午">下午</option>
+                            </select>
+                            <input type="text" value="" class="time inputStyle" />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span id="Label3" style="color:Black;font-weight:bold;">C1 三、四課</span>
+                            <input id="ckbIsSub34" type="checkbox" name="ckbIsSub34" checked="checked" /> 有開課
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">【C1 三、四課】上課時間：
+                            <input type="text" value="2018/10/27" id="txtSDate34" class="inputStyle" />
+                            <select id="dropSubTime34" class="inputStyle">
+                                <option value="上午">上午</option>
+                                <option selected="selected" value="下午">下午</option>
+
+                            </select>
+                            <input type="text" value="14:30~17:30" id="txtSubTime34" class="inputStyle" />
+                            <br />
+                            <br />
+                        </td>
+                    </tr> -->
+                    <!--地點-->
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span id="Label4" style="color:Black;font-weight:bold;">地點</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">
+                            <textarea rows="5" cols="20" id="location" style="width:95%;"></textarea>
+                        </td>
+                    </tr>
+                    <!--報名日期-->
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span id="Label5" style="color:Black;font-weight:bold;">報名日期</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">
+                            <input type="text" value="" id="regStartTime" class="inputStyle" />
+                        </td>
+                    </tr>
+                    <!--報名截止-->
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span id="Label6" style="color:Black;font-weight:bold;">報名截止</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">
+                            <input type="text" value="" id="regEndTime" class="inputStyle" />
+                        </td>
+                    </tr>
+                    <!--備註-->
+                    <tr style="height: 40px;">
+                        <td style="width: 150px; background-color: rgb(204,204,204)">
+                            <span id="Label7" style="color:Black;font-weight:bold;">備註</span>
+                        </td>
+                        <td style="background-color: rgb(239,239,239); text-align: center;">
+                            <textarea rows="10" cols="20" id="memo" style="width:95%;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <center>
+                <input type="button" value="儲存" id="btnSave" class="buttonStyle" />
+                <br />
+                <input type="button" value="返回" id="btnCel" class="buttonStyle" />
+            </center>
+        </div>
+    </form>
+</body>
+
+</html>
