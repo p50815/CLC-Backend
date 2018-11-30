@@ -1,5 +1,5 @@
 # [GET] getCourseContent 取得課程詳細內容
-
+
 ## API URL
 > http://{domain}:{port}/apis/SubjectData/SubjectEdit/getCourseContent
 
@@ -57,8 +57,8 @@ sid | int | 課程流水號，用途為`修改`才需帶入
 
 欄位名稱 | 型態 | 說明
 -- | - | -
-status | int | 處理結果狀態碼，0 為請求成功
-course | Object | 
+status | int | 處理結果狀態碼，0 為請求成功
+course | bject | 
 category | string | 課程類別名稱
 type | string | 取得資料的用途
 year | string | 開課年份
